@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        
+        <div class="product-input">
+            <h2>Add Product to Cart</h2>
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" required>
+            <label for="product-price">Product Price:</label>
+            <input type="number" id="product-price" step="0.01" required>
+            <label for="product-quantity">Quantity:</label>
+            <input type="number" id="product-quantity" min="1" value="1" required>
+            <button id="add-product">Add to Cart</button>
+        </div>
+        
+        <div class="cart-display">
+            <h2>Cart Items</h2>
+            <ul id="cart-items"></ul>
+            <h3 id="total-price">Total Price: $0.00</h3>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
